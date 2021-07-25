@@ -1,0 +1,90 @@
+body {
+  font-family: monospace;
+  padding: 0;
+  margin: 0;
+}
+.JsonValue:hover {
+  background: rgb(235, 235, 235);
+  border-radius: 5px;
+}
+.NumProperty {
+  padding-top: 15px !important;
+  border-radius: 5px;
+  border: 1px solid #113be0;
+}
+.boldStyle {
+  font-weight: bold;
+}
+.p5 {
+  padding: 5px;
+}
+.pl5 {
+  padding-left: 5px;
+}
+.pl12 {
+  padding-left: 12px;
+}
+.ml6 {
+  margin-left: 6px;
+}
+.colorWhite {
+  color: rgb(255, 255, 255) !important;
+}
+.colorGray {
+  color: gray;
+}
+
+.collapseIcon:hover,
+.mainCollapseIcon:hover {
+  cursor: pointer !important;
+}
+.collapseIcon {
+  height: 16px;
+  color: #3c8dad;
+  margin-top: 5px;
+}
+.mainCollapseIcon {
+  height: 16px;
+  color: #525252;
+  margin-top: 5px;
+}
+.JsonTree {
+  text-align: left;
+}
+.textInput {
+  border-radius: 5px;
+}
+.textInput:hover,
+.textInput:active {
+  border-color: rgb(47, 89, 230);
+}
+.editIcon:hover {
+  transform: scale(1.11);
+}
+.deleteIcon:hover {
+  transform: scale(1.11);
+}
+.cancelIcon:hover {
+  transform: scale(1.11);
+}
+.editIcon {
+  color: rgb(4, 126, 126);
+  cursor: pointer;
+  padding: 0px 8px;
+  height: 12px;
+  width: auto;
+}
+.deleteIcon {
+  color: rgb(184, 59, 59);
+  cursor: pointer;
+  padding: 0px 8px;
+  height: 15px;
+  width: auto;
+}
+.cancelIcon {
+  color: #838383;
+  cursor: pointer;
+  padding: 0px 8px;
+  height: 15px;
+  width: auto;
+}

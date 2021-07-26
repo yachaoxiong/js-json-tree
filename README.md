@@ -1,24 +1,32 @@
-# JSON TREE EDITOR
+# JSON tree viewer
 
-## Summary
+_A JSON view component for React._
 
-_An Online JSON Editor that can help you view and edit with a nice treeview._
-
-## Here is the [demo](https://json-treeview.vercel.app/)
+**Here is the [demo](https://json-treeview.vercel.app/)**
 
 ## Feature
 
 - [x] expand/collapse the JSON tree
 - [x] remove/edit nodes
 - [x] type of each node
-- [x] enter new resource
 
 ## How to use
 
 ```jsx
 import JsonTree from 'js-json-tree';
+const exampleData={
+  "id":2,
+  "name":"test"
+  "fruit":["apple","banana"]
+  "hours":{"monday":{
+    "opens_at":"8:38 AM",
+    "closes_at":"8:31 PM",
+    "is_closed":true
+    }
+  }
+}
+<JsonTree resource={exampleData}>
 
-<JsonTree resource={your-json-data}>
 ```
 
 ## Contact Me

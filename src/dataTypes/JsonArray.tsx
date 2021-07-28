@@ -49,29 +49,29 @@ const JsonArray = ({ value, dataKey, dataType }:arrState) => {
   const renderContent = () => {
     if (col) {
       return (
-        <div className='p5 ml6'>
+        <div style={{padding:5,marginLeft:6}}>
           <span>
-            <ToggleIcon onClick={toggleArray} className='collapseIcon' />
+            <ToggleIcon onClick={toggleArray} className='collapseIcon'style={{cursor: 'pointer',height: 16,color: '#3c8dad',marginTop: 5}} />
             <span>"</span>
             <span>{dataKey}</span>
             <span>"</span> : <DataLabel type={dataType} />
-            <span className='boldStyle'>[</span>
+            <span style={{fontWeight:"bold"}}>[</span>
             <span className='colorGray'>{currentValue.length} items</span>
-            <span className='boldStyle'>]</span>
+            <span style={{fontWeight:"bold"}}>]</span>
           </span>
         </div>
       );
     }
     return (
-      <div className='p5 ml6'>
+      <div style={{padding:5,marginLeft:6}}>
         <span>
-          <ToggleIcon onClick={toggleArray} className='collapseIcon' />
+          <ToggleIcon onClick={toggleArray} className='collapseIcon' style={{cursor: 'pointer',height: 16,color: '#3c8dad',marginTop: 5}} />
           <span>"</span>
           <span>{dataKey}</span>
           <span>"</span> : <DataLabel type={dataType} />
-          <span className='boldStyle'>[</span>
+          <span style={{fontWeight:"bold"}}>[</span>
           {renderArrayContent()}
-          <span className='boldStyle'>]</span>
+          <span style={{fontWeight:"bold"}}>]</span>
         </span>
       </div>
     );

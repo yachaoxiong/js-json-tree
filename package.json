@@ -1,5 +1,5 @@
 {
-  "version": "0.2.3",
+  "version": "0.3.2",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -43,6 +43,8 @@
     "json tree",
     "json editor",
     "react",
+    "treeview",
+    "json",
     "react json viewer"
   ],
   "module": "dist/js-json-tree.esm.js",
@@ -72,6 +74,5 @@
   "dependencies": {
     "@material-ui/core": "^4.12.2",
     "@material-ui/icons": "^4.11.2"
-
   }
 }

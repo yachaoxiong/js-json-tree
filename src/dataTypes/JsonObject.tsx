@@ -4,7 +4,7 @@ import DataLabel from './DataLabel';
 import { getTypes } from './getTypes';
 import ToggleIcon from '@material-ui/icons/PlayCircleFilled';
 import DeleteIcon from '@material-ui/icons/Delete';
-import CancelIcon from '@material-ui/icons/Cancel';
+// import CancelIcon from '@material-ui/icons/Cancel';
 // import EditIcon from '@material-ui/icons/Edit';
 // import  ToggleIcon  from 'caret-square-right-solid.svg';
 // import  DeleteIcon  from 'trash-alt-regular.svg';
@@ -56,44 +56,45 @@ const JsonObject:React.FC<objectState> = ({ value, dataKey, dataType, onDelete}:
   const renderObjContent = () => {
     if (col)
       return (
-        <div className='p5 ml6'>
+        <div style={{padding:5,marginLeft:6}}>
           <div onClick={toggleObj}>
-            <ToggleIcon onClick={toggleObj} className='collapseIcon' />
+            <ToggleIcon onClick={toggleObj} className='collapseIcon'style={{cursor: 'pointer',height: 16,color: '#3c8dad',marginTop: 5}} />
             <span>"{dataKey}"</span>
 
             <span>:</span>
-            <span className='boldStyle pl5'>{'{'}</span>
+            <span style={{fontWeight:"bold",paddingLeft:5}}>{'{'}</span>
             <span>
               <DeleteIcon
+              style={{cursor: 'pointer',color: 'rgb(184, 59, 59)'}}
                 className='deleteIcon'
                 onClick={() => {
                  onDelete(dataKey);
                 }}
               />
 
-              <CancelIcon className='cancelIcon' />
+              {/* <CancelIcon className='cancelIcon'style={{cursor: 'pointer'}} /> */}
             </span>
             <DataLabel type={dataType?dataType:""} />
           </div>
-          <div className='pl12'>
+          <div style={{paddingLeft:12}}>
             {renderObject()}
             <div>
-              <span className='boldStyle'>{'}'}</span>
+              <span style={{fontWeight:"bold"}}>{'}'}</span>
             </div>
           </div>
         </div>
       );
     return (
-      <div className='p5 ml6'>
+      <div style={{padding:5,marginLeft:6}}>
         <div>
-          <ToggleIcon onClick={toggleObj} className='collapseIcon' />"{dataKey}
+          <ToggleIcon onClick={toggleObj} className='collapseIcon' style={{cursor: 'pointer',height: 16,color: '#3c8dad',marginTop: 5}} />"{dataKey}
           ":
-          <span className='boldStyle'>
+          <span style={{fontWeight:"bold"}}>
             {'{'}
             <DataLabel type={dataType?dataType:""} />
           </span>
-          <span className='colorGray'>{keys.length} items</span>
-          <span className='boldStyle'>{'}'}</span>
+          <span style={{color:"gray"}}>{keys.length} items</span>
+          <span style={{fontWeight:"bold"}}>{'}'}</span>
         </div>
       </div>
     );

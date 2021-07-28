@@ -54,12 +54,12 @@ const JsonString = ({ value, dataKey, dataType, onEdit, onDelete }:stringState) 
               />
               <span>
 
-                <EditIcon style={{}} className='editIcon' onClick={editValue} />
+                <EditIcon style={{cursor:'pointer',color: 'rgb(4, 126, 126)', padding: '0px 8px',height: 15,width:"auto"}} className='editIcon' onClick={editValue} />
               </span>
 
-              <DeleteIcon className='deleteIcon' onClick={deleteValue} />
+              <DeleteIcon style={{cursor:'pointer',color: 'rgb(184, 59, 59)', padding: '0px 8px',height: 18,width:"auto"}}className='deleteIcon' onClick={deleteValue} />
 
-              <CancelIcon className='cancelIcon' onClick={cancelEdit} />
+              <CancelIcon style={{cursor:'pointer', color: '#838383', padding: '0px 8px',height: 18,width:"auto"}}className='cancelIcon' onClick={cancelEdit} />
             </span>
           ) : (
             <span className='JsonValue' onClick={showEditInput}>

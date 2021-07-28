@@ -8,7 +8,7 @@ interface FuncState{
 }
 const JsonFunction = ({  dataKey, dataType }:FuncState) => {
   return (
-    <div className='p5'>
+    <div style={{ padding: 5 }}>
       <span>
         <span>"</span>
         <span>{dataKey}</span>

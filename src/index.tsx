@@ -26,7 +26,7 @@ const JsJsonView:React.FC<IState>= ({resource}) => {
   };
 
   return (
-    <div className='appContainer' data-testid='Json-tree'>
+    <div style={{ fontFamily: "monospace"}}className="appContainer" data-testid='Json-tree'>
       <DataDetails
         data={currentResource}
         onDelete={DeleteObj}

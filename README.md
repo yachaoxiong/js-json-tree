@@ -8,6 +8,7 @@ _A JSON view component for React._
 
 - [x] expand/collapse the JSON tree
 - [x] remove/edit nodes
+- [x] Copy resource
 - [x] type of each node
 
 ## How to use

@@ -17,8 +17,8 @@ _A JSON view component for React._
 import JsonTree from 'js-json-tree';
 const exampleData={
   "id":2,
-  "name":"test"
-  "fruit":["apple","banana"]
+  "name":"test",
+  "fruit":["apple","banana"],
   "hours":{"monday":{
     "opens_at":"8:38 AM",
     "closes_at":"8:31 PM",

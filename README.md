@@ -10,7 +10,10 @@ _A JSON view component for React._
 - [x] remove/edit nodes
 - [x] Copy resource
 - [x] type of each node
-
+## Install
+```bash
+npm install --save js-json-tree
+```
 ## How to use
 
 ```jsx

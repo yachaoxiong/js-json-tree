@@ -10,15 +10,18 @@ _A JSON view component for React._
 - [x] remove/edit nodes
 - [x] Copy resource
 - [x] type of each node
-
+## Install
+```bash
+npm install --save js-json-tree
+```
 ## How to use
 
 ```jsx
 import JsonTree from 'js-json-tree';
 const exampleData={
   "id":2,
-  "name":"test"
-  "fruit":["apple","banana"]
+  "name":"test",
+  "fruit":["apple","banana"],
   "hours":{"monday":{
     "opens_at":"8:38 AM",
     "closes_at":"8:31 PM",
